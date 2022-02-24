@@ -1,3 +1,6 @@
+import jsonData from './elements.json' assert {type:'json'}
+import dropdownfilter from './filterdropdown.js'
+
 const filterdropdown = document.querySelector("#filter");
 document.getElementById("dropdowncontent").style.display = 'none';
 filterdropdown.addEventListener('click', (event) => {
@@ -34,17 +37,6 @@ closecartdropdown.forEach(function(element, index){
         setTimeout(function(){closecart(index)}, 1000);
     })
 });
-
-function dropdownfilter(){
-    let x = document.getElementById("dropdowncontent").style.display;
-    console.log(x);
-    if (x == 'none') {
-        document.getElementById("dropdowncontent").style.display = 'block';
-    }
-    else {
-        document.getElementById("dropdowncontent").style.display = 'none';
-    }
-}
 
 function dropdown(idelement, index){
     let x = document.getElementById(idelement).style.display;
@@ -97,8 +89,7 @@ function closecart(index){
 }
 
 
-var jsonData = require('./elements.json');
-var postedData = JSON.parse(jsonData);
-var postedElement = '<div><div class="number"><span></span></div><div class="container_1"></div><h4></h4><p class="ingredients"></p><div class="addtocart" id="addtocart_1"><button type="button" class="button"><span class="button__icon"><ion-icon name="cart-outline"></ion-icon></span><span class="button__text">Add to cart</span></button><div class="cartdropdown" id="cartdropdown_1"><span id="minus_1">–</span><p id="index_1">0</p><span id="plus_1">+</span></div></div><p class="price"></p></div>';
+console.log(jsonData[0]);
+var postedElement = '<div><div class="number"><span></span></div><div class="container"></div><h4></h4><p class="ingredients"></p><div class="addtocart" id="addtocart_1"><button type="button" class="button"><span class="button__icon"><ion-icon name="cart-outline"></ion-icon></span><span class="button__text">Add to cart</span></button><div class="cartdropdown" id="cartdropdown_1"><span id="minus_1">–</span><p id="index_1">0</p><span id="plus_1">+</span></div></div><p class="price"></p></div>';
 
-console.log(postedData);
+postedElement.getElementsByClassName("number")

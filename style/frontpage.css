@@ -116,7 +116,7 @@
   width: 310px;
   height: 310px;
   display: block;
-  background-image: url("pizzatrial.jpg");
+  background-image: url("./media/pizzatrial.jpg");
   background-size: 310px 310px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -780,7 +780,7 @@
 
 html {
   background-color: #F4EBDF;
-  background-image: url("pizzafinal.png");
+  background-image: url("./media/pizzafinal.png");
   background-repeat: space;
   scroll-behavior: smooth;
   -webkit-user-select: none;
@@ -795,7 +795,7 @@ html:hover {
 }
 
 .header {
-  background-image: url("./headerimage/wallpaper.png");
+  background-image: url("./media/wallpaper.png");
   background-attachment: fixed;
   background-size: 1550px 500px;
   height: 475px;

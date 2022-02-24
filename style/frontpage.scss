@@ -8,7 +8,7 @@
 
 html {
 	background-color: #F4EBDF;
-	background-image: url("pizzafinal.png");
+	background-image: url("./media/pizzafinal.png");
 	background-repeat: space;
 	scroll-behavior: smooth;
 	user-select: none;
@@ -19,7 +19,7 @@ html {
 }
 
 .header {
-	background-image: url("./headerimage/wallpaper.png");
+	background-image: url("./media/wallpaper.png");
 	background-attachment: fixed;
 	background-size: 1550px 500px;
 	height:475px;
