@@ -41,5 +41,3 @@ closecartdropdown.forEach(function(element, index){
 
 console.log(jsonData[0]);
 var postedElement = '<div><div class="number"><span></span></div><div class="container"></div><h4></h4><p class="ingredients"></p><div class="addtocart" id="addtocart_1"><button type="button" class="button"><span class="button__icon"><ion-icon name="cart-outline"></ion-icon></span><span class="button__text">Add to cart</span></button><div class="cartdropdown" id="cartdropdown_1"><span id="minus_1">–</span><p id="index_1">0</p><span id="plus_1">+</span></div></div><p class="price"></p></div>';
-
-postedElement.getElementsByClassName("number")
