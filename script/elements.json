@@ -4,7 +4,7 @@
     "title": "Four cheese",
     "ingredients": "Tomato sauce, cheese",
     "price":13,
-    "url":"pizzatrial.jpg"
+    "url":"pizza.jpg"
 },
 {
     "section":"pizza",
@@ -24,6 +24,12 @@
     "section":"pizza",
     "title": "Four cheese",
     "ingredients": "Tomato sauce, cheese",
+    "price":13,
+    "url":"pizzatrial.jpg"
+},
+{
+    "section":"drinks",
+    "title": "Cola",
     "price":13,
     "url":"pizzatrial.jpg"
 }

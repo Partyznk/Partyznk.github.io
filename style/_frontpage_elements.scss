@@ -37,7 +37,7 @@
 		justify-items: center;
 		align-items: center;
 		width:100%;
-		[class^="pizza"] {
+		[class^="pizza"], [class^="drinks"], [class^="sidedishes"] {
 			position:relative;
 			background-color: mintcream;
 			border-radius: 10px;
