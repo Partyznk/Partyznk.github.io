@@ -34,18 +34,17 @@
   font-size: 16px;
   display: -ms-grid;
   display: grid;
-  justify-items: start;
-  -ms-grid-columns: auto auto auto;
-      grid-template-columns: auto auto auto;
+  width: 100%;
+  -ms-grid-columns: 420px 420px 420px;
+      grid-template-columns: 420px 420px 420px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  grid-column-gap: 25px;
+  grid-column-gap: 100px;
   grid-row-gap: 50px;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
 }
 
 .section .elements [class^="pizza"], .section .elements [class^="drinks"], .section .elements [class^="sidedishes"] {

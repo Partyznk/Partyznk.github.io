@@ -1,4 +1,4 @@
-.section {	
+.section {
 	.sectiontitle {
 		margin-left: 10px;
 		margin-bottom:25px;
@@ -29,14 +29,13 @@
 	.elements {
 		font-size: 16px;
 		display: grid;
-		justify-items: start;
-		grid-template-columns: auto auto auto;
+		width:100%;
+		grid-template-columns:  420px 420px 420px;
 		box-sizing: border-box;
-		grid-column-gap: 25px;
+		grid-column-gap: 100px;
 		grid-row-gap: 50px;
 		justify-items: center;
 		align-items: center;
-		width:100%;
 		[class^="pizza"], [class^="drinks"], [class^="sidedishes"] {
 			position:relative;
 			background-color: mintcream;
