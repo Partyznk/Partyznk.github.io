@@ -30,7 +30,8 @@
 		font-size: 16px;
 		display: grid;
 		width:100%;
-		grid-template-columns:  420px 420px 420px;
+		grid-template-columns:  1fr 1fr 1fr;
+		grid-template-rows: 35rem;
 		box-sizing: border-box;
 		grid-column-gap: 100px;
 		grid-row-gap: 50px;
@@ -43,10 +44,12 @@
 			display: block;
 			box-sizing: border-box;
 			border:5px solid rgba(255, 255, 255, 0);
+			width:320px;
+
 			.price {
 				position:relative;
 				display: inline-block;
-				left:30px;
+				left:55px;
 				top:-10px;
 				color:rgb(112, 224, 112);
 				text-shadow: 0px 0px #000000;
@@ -54,13 +57,14 @@
 				z-index:2;
 				box-shadow: 0px 15px 5px 2px rgba(0,0,0,0.05);
 				border-radius: 50%;
-				padding: 5px 15px;
+				padding: 5px;
 			}
 			&:hover {
 				box-shadow: 5px 0px 8px 0 rgba(0, 0, 0, 0.2), -5px 2px 8px 0 rgba(0, 0, 0, 0.2);
 				box-sizing: border-box;
 				border: 3px solid #ffff00 ;
 				margin: 2px;
+				padding:2px;
 				.price {
 					text-shadow: 0px 0px 1.5px rgb(93, 184, 93);
 					box-shadow: 0px 15px 5px 3px rgba(0,0,0,0.05);
@@ -74,9 +78,6 @@
 					background-position: 25% 25%;
 					box-shadow: 5px 5px 15px rgba(0,0,0,0.3) inset, -5px -5px 15px rgba(0,0,0,0.3) inset;
 				}
-			}
-			h4, p {
-				font-family: Georgia, 'Times New Roman', Times, serif;
 			}
 			h4 {
 				position:relative;
@@ -96,10 +97,13 @@
 			.ingredients {
 				margin-left: 10px;
 				font-size: 0.9em;
+				flex-wrap: wrap;
+				padding: 0px 10px 0px 0px;
 			}
 			.addtocart {
 				height: 40px;
 				display: inline-block;
+				font-family: Verdana, sans-serif;
 				[class^="button"] {
 					display: inline-flex;
 					height: 40px;

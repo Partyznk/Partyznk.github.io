@@ -2,14 +2,14 @@
 {
     "section":"pizza",
     "title": "Four cheese",
-    "ingredients": "Tomato sauce, cheese",
+    "ingredients": "Tomato sauce, mozzarella, broccoli, salami, red bell peppers",
     "price":13,
     "url":"pizza.jpg"
 },
 {
     "section":"pizza",
     "title": "Salami",
-    "ingredients": "Tomato sauce, cheese, salami",
+    "ingredients": "Tomato sauce, parmesan, pepperoni, onions",
     "price":16,
     "url":"pizzatrial.jpg"
 },
@@ -29,6 +29,18 @@
 },
 {
     "section":"drinks",
+    "title": "Cola",
+    "price":13,
+    "url":"pizzatrial.jpg"
+},
+{
+    "section":"sidedishes",
+    "title": "Cola",
+    "price":13,
+    "url":"pizzatrial.jpg"
+},
+{
+    "section":"sidedishes",
     "title": "Cola",
     "price":13,
     "url":"pizzatrial.jpg"

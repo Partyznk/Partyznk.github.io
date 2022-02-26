@@ -27,7 +27,11 @@
 
 @keyframes pizzaing {
 	0% {position: absolute;left:-60px;}
-	25%{transform: rotate(180deg);}
-	50% {left:95%; transform: rotate(360deg);}
+	50% {left:95%;}
 	100% {left:-60px;}
+}
+
+@keyframes rotatinpizza {
+	0%{}
+	100%{transform:rotate(180deg)}
 }

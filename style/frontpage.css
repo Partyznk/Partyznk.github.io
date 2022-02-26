@@ -35,8 +35,10 @@
   display: -ms-grid;
   display: grid;
   width: 100%;
-  -ms-grid-columns: 420px 420px 420px;
-      grid-template-columns: 420px 420px 420px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 35rem;
+      grid-template-rows: 35rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   grid-column-gap: 100px;
@@ -55,12 +57,13 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 5px solid rgba(255, 255, 255, 0);
+  width: 320px;
 }
 
 .section .elements [class^="pizza"] .price, .section .elements [class^="drinks"] .price, .section .elements [class^="sidedishes"] .price {
   position: relative;
   display: inline-block;
-  left: 30px;
+  left: 55px;
   top: -10px;
   color: #70e070;
   text-shadow: 0px 0px #000000;
@@ -69,7 +72,7 @@
   -webkit-box-shadow: 0px 15px 5px 2px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 15px 5px 2px rgba(0, 0, 0, 0.05);
   border-radius: 50%;
-  padding: 5px 15px;
+  padding: 5px;
 }
 
 .section .elements [class^="pizza"]:hover, .section .elements [class^="drinks"]:hover, .section .elements [class^="sidedishes"]:hover {
@@ -79,6 +82,7 @@
           box-sizing: border-box;
   border: 3px solid #ffff00;
   margin: 2px;
+  padding: 2px;
 }
 
 .section .elements [class^="pizza"]:hover .price, .section .elements [class^="drinks"]:hover .price, .section .elements [class^="sidedishes"]:hover .price {
@@ -99,10 +103,6 @@
   background-position: 25% 25%;
   -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3) inset, -5px -5px 15px rgba(0, 0, 0, 0.3) inset;
           box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3) inset, -5px -5px 15px rgba(0, 0, 0, 0.3) inset;
-}
-
-.section .elements [class^="pizza"] h4, .section .elements [class^="pizza"] p, .section .elements [class^="drinks"] h4, .section .elements [class^="drinks"] p, .section .elements [class^="sidedishes"] h4, .section .elements [class^="sidedishes"] p {
-  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .section .elements [class^="pizza"] h4, .section .elements [class^="drinks"] h4, .section .elements [class^="sidedishes"] h4 {
@@ -126,11 +126,15 @@
 .section .elements [class^="pizza"] .ingredients, .section .elements [class^="drinks"] .ingredients, .section .elements [class^="sidedishes"] .ingredients {
   margin-left: 10px;
   font-size: 0.9em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0px 10px 0px 0px;
 }
 
 .section .elements [class^="pizza"] .addtocart, .section .elements [class^="drinks"] .addtocart, .section .elements [class^="sidedishes"] .addtocart {
   height: 40px;
   display: inline-block;
+  font-family: Verdana, sans-serif;
 }
 
 .section .elements [class^="pizza"] .addtocart [class^="button"], .section .elements [class^="drinks"] .addtocart [class^="button"], .section .elements [class^="sidedishes"] .addtocart [class^="button"] {
@@ -267,7 +271,7 @@
   background-color: #29529f;
   right: 25px;
   top: 3px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Verdana, sans-serif;
 }
 
 .outline:hover {
@@ -309,13 +313,13 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: white;
-  font-size: 13px;
+  font-size: 0.75rem;
   font-style: italic;
   border-radius: 15px;
   right: 70px;
   width: 195px;
   height: 30px;
-  padding: 5px;
+  padding: 5px 10px 10px 5px;
   margin: 0 auto;
   overflow: hidden;
   -webkit-box-shadow: 5px 5px 5px rgba(112, 224, 112, 0.3), -5px -5px 5px rgba(112, 224, 112, 0.3);
@@ -544,14 +548,8 @@
     position: absolute;
     left: -60px;
   }
-  25% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
   50% {
     left: 95%;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
   }
   100% {
     left: -60px;
@@ -563,17 +561,29 @@
     position: absolute;
     left: -60px;
   }
-  25% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
   50% {
     left: 95%;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
   }
   100% {
     left: -60px;
+  }
+}
+
+@-webkit-keyframes rotatinpizza {
+  0% {
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+@keyframes rotatinpizza {
+  0% {
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
 }
 
@@ -607,6 +617,7 @@
 .ad .adtext p {
   position: relative;
   display: inline-block;
+  font-size: 0.78rem;
   width: 85%;
   top: -16px;
   padding: 5px;
@@ -708,12 +719,13 @@
   z-index: 3;
   border: 2px dashed #d19c39;
   right: 0;
-  border-radius: 5px;
+  border-radius: 20px;
   overflow-y: scroll;
-  overflow: auto;
+  overflow: hidden;
   width: 250px;
   height: 250px;
-  background-color: #fce5e5;
+  background-color: #fafafa;
+  opacity: 0.95;
 }
 
 .dropdown .dropdowncontent .selector {
@@ -727,19 +739,23 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 10px;
-  font-size: 16px;
-  color: #d45c5c;
+  font-size: 0.9rem;
+  color: black;
   border: 1px solid #d19c39;
   border-radius: 5px;
 }
 
 .dropdown .dropdowncontent .selector:hover {
-  background-color: #e9c7c7;
+  background-color: #F4EBDF;
 }
 
 .dropdown .dropdowncontent .selector label {
   padding: 5px;
   display: inline-block;
+}
+
+.dropdown .dropdowncontent .selector label:hover {
+  cursor: pointer;
 }
 
 .dropdown .filter {
@@ -784,6 +800,7 @@ html {
   background-image: url("./media/pizzafinal.png");
   background-repeat: space;
   scroll-behavior: smooth;
+  font-family: Verdana, sans-serif;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -823,6 +840,10 @@ html:hover {
 
 a {
   text-decoration: none;
+}
+
+button {
+  font-family: Verdana, sans-serif;
 }
 
 footer {

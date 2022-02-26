@@ -11,6 +11,7 @@ html {
 	background-image: url("./media/pizzafinal.png");
 	background-repeat: space;
 	scroll-behavior: smooth;
+	font-family: Verdana, sans-serif;
 	user-select: none;
 	overflow-x: hidden;
 	&:hover {
@@ -43,6 +44,9 @@ html {
 
 a {
     text-decoration: none;
+}
+button {
+	font-family: Verdana, sans-serif;
 }
 
 footer {
